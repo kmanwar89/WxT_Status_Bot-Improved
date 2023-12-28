@@ -12,16 +12,18 @@ This code was adopted from the great work done by @matthewf01, however that proj
 - NeoPixel is used instead of a single LED - this allows for more granular (16,777,216, to be exact!) colors without pseudo-PWM that the Pi is trying to push to the LED
 - More colors included to incorporate new "busy" status
   - NOTE: I've confirmed with WebEx developers that the backend API has not been fully updated to incorporate new features in WxT - namely, "Quiet hours" and "Busy" status. The backend API still shows "unknown" as the status, so the colors are duplicated until those backend changes are made:
-    > Yes, this DnD status has been already implemented now in the Production correctly and that's why the DnD status looks to be fine.
-      However, the "Busy" status is still not implemented in the system and it shows as "Unknown". It needs to be handled from backend so that it's available in API.
-      Even the "Quiet" status also needs to be implemented from the backend since currently the "Quiet" status shows as "DnD" in the API.
-      We already have a JIRA raised internally from the Product Management team and work is in progress. But don't have a fixed ETA at this moment.
+
+      > Yes, this DnD status has been already implemented now in the Production correctly and that's why the DnD status looks to be fine.
+
+      > However, the "Busy" status is still not implemented in the system and it shows as "Unknown". It needs to be handled from backend so that it's available in API.
+      
+      > Even the "Quiet" status also needs to be implemented from the backend since currently the "Quiet" status shows as "DnD" in the API.
+
+      > We already have a JIRA raised internally from the Product Management team and work is in progress. But don't have a fixed ETA at this moment.
+      
 
 <br>
 
-<b>Finished project:</b>
-<img src="https://github.com/kmanwar89/WxT_Status_Bot-Improved/raw/master/photos/final_enclosure.jpg" height="1024" width="512">
-<br>
 **Finished project mounted on my office door jamb:**
 <img src="https://github.com/kmanwar89/WxT_Status_Bot-Improved/raw/master/photos/mounted_final.jpg" height="1024" width="512">
 
@@ -112,8 +114,8 @@ The Python script has been set via systemd service to run at startup.
 
 Restart the Raspberry Pi and confirm the script has started automatically. 
 
-**Enjoy your new Webex Teams Status light, and teach your family what the color-codes mean! Red = do not disturb me, and green = I'm working but you can come into the room. Blue means inactive (so I'm not working).**
+Enjoy your new Webex Teams Status light, and teach your family what the color-codes mean! 
 
-
-
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/matthewf01/Webex-Teams-Status-Box)
+- Red = do not disturb me
+- Green = I'm working but you can come into the room
+- Blue means inactive (so I'm not working)
