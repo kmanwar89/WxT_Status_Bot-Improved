@@ -1,4 +1,4 @@
-# Webex-Teams-Status-Box - Improved!
+# Webex-Teams-Status-Bot - Improved!
 **IoT status light using a Raspberry Pi Zero W, Python 3, *webexteamssdk* and Adafruit's NeoPixel Stick 8-RGB LED to display your real-time presence status in Webex Teams**
 
 This code was adopted from the great work done by @matthewf01, however that project hasn't been updated for 3 years. Some improvements over the existing code:
